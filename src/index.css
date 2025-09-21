@@ -152,4 +152,8 @@
   .tap-highlight-color {
     -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
   }
+
+  .bg-conic-gradient {
+    background: var(--background-conic-gradient);
+  }
 }
