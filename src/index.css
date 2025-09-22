@@ -156,4 +156,28 @@
   .bg-conic-gradient {
     background: var(--background-conic-gradient);
   }
+
+  .bg-radial-blue {
+    background: radial-gradient(
+      circle at center,
+      #28206c 0%,
+      rgba(40, 32, 108, 0) 70%
+    );
+  }
+
+  .bg-radial-green {
+    background: radial-gradient(
+      circle at center,
+      #1f6c28 0%,
+      rgba(31, 108, 40, 0) 70%
+    );
+  }
+
+  .bg-radial-pink {
+    background: radial-gradient(
+      circle at center,
+      #6c204f 0%,
+      rgba(108, 32, 79, 0) 70%
+    );
+  }
 }
