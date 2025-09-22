@@ -1,7 +1,7 @@
 
 const Heading = ({className, title}: {className?: string; title?: string}) => {
   return (
-    <div className={`${className} max-w-[50rem] mx-auto mb-12 lg:mb-20`}>
+    <div className={`${className} max-w-[50rem] mx-auto mb-12 lg:mb-20 text-center`}>
         {title && <h2 className={`h2 ${className || ''}`}>{title}</h2>}
     </div>
   )

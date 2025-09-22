@@ -1,9 +1,9 @@
+import Arrow from "../assets/svg/Arrow";
+import ClipPath from "../assets/svg/ClipPath";
 import { benefits } from "../constants/constants";
+import { GradientLight } from "./design/Benefits";
 import Heading from "./Heading";
 import Section from "./Section";
-import Arrow from "../assets/svg/Arrow";
-import { GradientLight } from "./design/Benefits";
-import ClipPath from "../assets/svg/ClipPath";
 
 const Benefits = () => {
   return (
@@ -14,12 +14,12 @@ const Benefits = () => {
           title="Chat Smarter, Not Harder with Brainwave"
         />
 
-        <div className="flex flex-wrap gap-10 mb-10">
+        <div className="flex flex-wrap justify-center items-center gap-10 mb-10">
           {benefits.map((item) => (
             <div
+              key={item.id}
               className="block relative p-0.5 bg-no-repeat bg-[length:100%_100%] md:max-w-[24rem]"
               style={{ backgroundImage: `var(${item.backgroundVar})` }}
-              key={item.id}
             >
               <div className="relative z-2 flex flex-col min-h-[22rem] p-[2.4rem] pointer-events-none">
                 <h5 className="h5 mb-5">{item.title}</h5>
