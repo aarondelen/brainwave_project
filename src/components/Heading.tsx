@@ -1,8 +1,9 @@
 
-const Heading = ({className, title}: {className?: string; title?: string}) => {
+const Heading = ({className, title, text}: {className?: string; title?: string; text?: string}) => {
   return (
     <div className={`${className} max-w-[50rem] mx-auto mb-12 lg:mb-20 text-center`}>
         {title && <h2 className={`h2 ${className || ''}`}>{title}</h2>}
+        {text && <p className={`body-2 mt-4 text-n-4 ${className || ''}`}>{text}</p>}
     </div>
   )
 }
