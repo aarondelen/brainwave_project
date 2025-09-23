@@ -2,7 +2,7 @@ import ButtonSvg from "../assets/svg/ButtonSvg";
 
 type ButtonProps = {
   className?: string;
-  href?: string;
+  href?: any;
   onClick?: () => void;
   children?: React.ReactNode;
   px?: string;
@@ -17,7 +17,9 @@ const Button = ({
   px,
   white,
 }: ButtonProps) => {
-  const classes = `button cursor-pointer relative items-center justify-center h-11 transition-colors hover:text-color-1 ${px || "px-7"} ${white ? "text-n-8" : "text-n-1"} ${className || ""}`;
+  const classes = `button cursor-pointer relative flex z-10 items-center justify-center h-11 transition-colors hover:text-color-1 overflow-hidden ${
+    px || "px-7"
+  } ${white ? "text-n-8" : "text-n-1"} ${className || ""}`;
   const spanClasses = "relative z-10";
 
   const renderButton = () => (

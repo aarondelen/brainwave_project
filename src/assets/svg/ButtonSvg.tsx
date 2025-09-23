@@ -14,7 +14,7 @@ const ButtonSvg = (white: boolean = false) => (
       />
     </svg>
     <svg
-      className="absolute top-0 left-[1.3125rem] w-[calc(100%-2.625rem)]"
+      className="absolute top-0 left-[1.25rem] w-[calc(100%-2.5rem)]"
       height="44"
       viewBox="0 0 100 44"
       preserveAspectRatio="none"
